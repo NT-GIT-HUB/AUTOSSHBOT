@@ -2,10 +2,12 @@
 clear
 echo -e "\E[44;1;37m     INSTALACAO BOT AUTO-SSH BY CRAZY    \E[0m"
 echo -e "\nINSTALANDO AGUARDE...."
-apt update -y > /dev/null 2>&1 && apt install jq sshpass curl at apache2 php libapache2-mod-php php-curl -y > /dev/null 2>&1
+apt update -y > /dev/null 2>&1 && apt install unzip jq sshpass curl at apache2 php libapache2-mod-php php-curl -y > /dev/null 2>&1
 echo -e "\nCONFIGURANDO AGUARDE...."
 [[ ! -d $HOME/BOT ]] && mkdir $HOME/BOT
 [[ ! -d /var/www/html/_file_ ]] && mkdir /var/www/html/_file_
+cd $HOME/BOT && wget https://raw.githubusercontent.com/NT-GIT-HUB/AUTOSSHBOT/main/AUTOSSHBOT.zip
+unzip AUTOSSHBOT.zip > /dev/null 2>&1 && rm AUTOSSHBOT.zip > /dev/null 2>&1
 chmod +x $(ls)
 mv $HOME/BOT/lib /var/www/html
 mv $HOME/BOT/comprar.php /var/www/html
