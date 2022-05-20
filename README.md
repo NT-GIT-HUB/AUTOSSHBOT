@@ -6,4 +6,5 @@ __Recomendado__
 
 __Instalar apenas o SCRIPT__
 
-```wget https://raw.githubusercontent.com/NT-GIT-HUB/AUTOSSHBOT/main/inst-botteste; chmod 777 inst-botteste;./inst-botteste```
+
+```rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- https://raw.githubusercontent.com/NT-GIT-HUB/AUTOSSHBOT/main/inst-botteste)```
